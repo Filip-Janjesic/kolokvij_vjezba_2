@@ -54,7 +54,9 @@ create table zarucnica(
 	indiferentno bit not null
 );
 
-
-
-
+alter table brat add foreign key (neprijatelj) references neprijatelj (sifra);
+alter table neprijatelj add foreign key (cura) references cura (sifra);
+alter table cura add foreign key (decko) references decko (sifra);
+alter table decko_zarucnica add foreign key (decko) references decko (sifra);
+alter table decko_zarucnica add foreign key (zarucnica) references zarucnica (sifra);
 
