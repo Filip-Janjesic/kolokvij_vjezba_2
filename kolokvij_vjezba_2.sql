@@ -63,6 +63,19 @@ alter table decko_zarucnica add foreign key (zarucnica) references zarucnica (si
 
 #1. U tablice neprijatelj, cura i decko_zarucnica unesite po 3 retka. (7)
 
+select * from decko;
+
+insert into decko (vesta,asocijalno) values
+('crna',1),
+('bijela',0),
+('žuta',1);
+
+select * from cura;
+
+insert into cura (haljina,drugiputa,majica,decko) values
+('ljubičasta','2001-05-21','žuta',1),
+('crvena','2011-02-11','crna',2),
+('crna','2002-11-01','plava',3);
 
 select * from neprijatelj;
 
