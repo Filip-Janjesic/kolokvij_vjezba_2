@@ -79,10 +79,10 @@ insert into cura (haljina,drugiputa,majica,decko) values
 
 select * from neprijatelj;
 
-insert into neprijatelj (majca,haljina,lipa,modelnaocala,kuna,jmbag,cura) values
-('crna','crvena',1456.234,'ray-ban',333333.232421,'12345678910',1),
-(),
-(');
+insert into neprijatelj (haljina,modelnaocala,kuna) values
+('crna','ray-ban',333333.232421),
+('roza','ray-ban',333333.232421),
+('žuta','ray-ban',333333.232421);
 
 
 
